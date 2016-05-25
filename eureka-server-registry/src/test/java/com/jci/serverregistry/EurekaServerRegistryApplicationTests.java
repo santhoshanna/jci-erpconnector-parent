@@ -1,0 +1,18 @@
+package com.jci.serverregistry;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.SpringApplicationConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.web.WebAppConfiguration;
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@SpringApplicationConfiguration(classes = EurekaServerRegistry.class)
+@WebAppConfiguration
+public class EurekaServerRegistryApplicationTests {
+
+	@Test
+	public void contextLoads() {
+	}
+
+}

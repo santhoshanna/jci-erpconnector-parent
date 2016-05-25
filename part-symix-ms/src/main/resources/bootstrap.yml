@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: part-symix-ms
+  cloud:
+    config:
+      uri: http://localhost:8888 

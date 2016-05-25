@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <groupId>com.jci.eurekamicroservice</groupId>
+  <artifactId>eureka-server-registry</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  
+  <name>eureka-server-registry</name>
+  <description>Eureka Sample App</description>
+  
+  <parent>
+		<groupId>com.jci.parentmicroservice</groupId>
+		<artifactId>jci-erpconnector-parent</artifactId>
+		<version>1.0-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
+  </parent>
+  
+  <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka-server</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-config-client</artifactId>
+        </dependency>
+  </dependencies>
+  <build>
+    <finalName>eureka-server-registry</finalName>
+  </build>
+  <properties>
+        <start-class>com.jci.serverregistry.EurekaServerRegistry</start-class>
+  </properties>
+</project>
